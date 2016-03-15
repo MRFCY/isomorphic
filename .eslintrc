@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "node": true,
+    "mocha": true,
+    "browser": true
+   },
+  "plugins": [
+    "react"
+  ],
+   "rules": {
+     "comma-dangle": [2, "always-multiline"],
+     "comma-style": [1, "last", {"exceptions": {"VariableDeclaration": true}}],
+     "no-unused-vars": [2, {"vars": "all", "args": "none"}],
+     "semi": [1, "always"],
+     "react/display-name": [0]
+   }
+}

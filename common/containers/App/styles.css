@@ -1,0 +1,3 @@
+.title {
+  composes: text-center from '../../styles/helpers.css';
+}
